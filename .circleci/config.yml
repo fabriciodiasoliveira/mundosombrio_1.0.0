@@ -30,7 +30,8 @@ jobs: # a collection of steps
       #    paths:
       #      - node_modules
       - run: tar -czvf preparado.tar.gz app resources routes config database
-      - run: scp preparar* fabricioweb@fabricioweb.net:~/;Devanon1
+      - run: scp preparar* fabricioweb@fabricioweb.net:~/;
+      - Devanon1
       #- run: touch storage/testing.sqlite 
       #- run: php artisan migrate --env=testing --database=sqlite_testing --force
       #- run: ./vendor/bin/codecept build
