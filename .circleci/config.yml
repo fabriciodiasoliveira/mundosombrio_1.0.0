@@ -39,7 +39,4 @@ jobs: # a collection of steps
       # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: preparado.tar.gz
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
-      - run: scp -r app/* fabricioweb@fabricioweb.net:/;Devanon1
-      - run: scp -r resources/* fabricioweb@fabricioweb.net:/;Devanon1
-      - run: scp -r config/* fabricioweb@fabricioweb.net:/;Devanon1
-      - run: scp -r www/* fabricioweb@fabricioweb.net:/;Devanon1
+      - run: lftp -u fabricioweb,Devanon1 -e "mirror -c;quit" ftp.fabricioweb.net
