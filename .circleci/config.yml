@@ -30,6 +30,7 @@ jobs: # a collection of steps
       #    paths:
       #      - node_modules
       - run: tar -czvf preparado.tar.gz app resources routes config database
+      - run: lftp -u fabricioweb,Devanon1 -e "mirror -c;quit" ftp.fabricioweb.net
       #- run: touch storage/testing.sqlite 
       #- run: php artisan migrate --env=testing --database=sqlite_testing --force
       #- run: ./vendor/bin/codecept build
@@ -38,4 +39,3 @@ jobs: # a collection of steps
       # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: preparado.tar.gz
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
-      #- run: lftp -u fabricioweb,Devanon1 -e "mirror -c;quit" ftp.fabricioweb.net
