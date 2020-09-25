@@ -2,6 +2,8 @@
 <html lang="{{ app()->getLocale() }}">
     <head>
         @component('components.helpers.headers')@endcomponent
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body class="grad">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -154,6 +156,6 @@
 
 
         <!-- Scripts -->
-        {{--<script src="{{ asset('js/app.js') }}"></script>--}}
+        <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

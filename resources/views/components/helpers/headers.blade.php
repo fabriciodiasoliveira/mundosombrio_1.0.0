@@ -7,11 +7,11 @@
 <script src="{{ asset('js/jquery-3.3.1.js') }}"></script>
 <script src="{{ asset('js/popper.min.js') }}"></script>
 <!--Bootstrap 3 -->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}"/><!--teste-->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}"/>
+<!--<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}"/>-->
+<!--<link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}"/>-->
 <!--<link rel="stylesheet" type="text/css" href="{{ asset('css/theme/theme.min.css') }}"/>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/theme/theme.css') }}"/>-->
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<!--<script src="{{ asset('js/bootstrap.min.js') }}"></script>-->
 <!-- Google -->
 <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 <meta name="google-signin-client_id" content="1079643134516-foleohdgtqreqvnubc9edq64ts2k3nk9.apps.googleusercontent.com">

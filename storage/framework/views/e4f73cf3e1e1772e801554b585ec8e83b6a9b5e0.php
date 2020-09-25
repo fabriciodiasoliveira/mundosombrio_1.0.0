@@ -2,6 +2,8 @@
 <html lang="<?php echo e(app()->getLocale()); ?>">
     <head>
         <?php $__env->startComponent('components.helpers.headers'); ?><?php echo $__env->renderComponent(); ?>
+        <!-- Styles -->
+        <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
     </head>
     <body class="grad">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -156,6 +158,6 @@
 
 
         <!-- Scripts -->
-        
+        <script src="<?php echo e(asset('js/app.js')); ?>"></script>
 </body>
 </html>
